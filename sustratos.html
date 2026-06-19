@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustratos Hidropónicos — Ebook | Grupo Delfín Rosa</title>
+<meta name="description" content="Ebook Sustratos Hidropónicos: la clave para cultivos exitosos y rentables. S/25, 10 capítulos, garantía 7 días. Descarga gratis la guía de los 5 errores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#F2569A;--rosa-2:#FF7EB6;--rosa-claro:#FFE6F1;--azul:#163B54;--azul-2:#0E2A3D;--azul-claro:#E9F1F6;--verde:#3E8E41;--verde-2:#2E5E3A;--verde-claro:#E9F5E8;--crema:#FFF7FB;--tinta:#1E2A33;--gris:#5C6672;--linea:#EFE2EA;--sombra:0 14px 40px rgba(22,59,84,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--tinta);background:var(--crema);line-height:1.6}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;color:var(--azul)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;gap:9px;border:0;border-radius:999px;padding:14px 26px;font-family:'Poppins';font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rosa{background:var(--rosa);color:#fff;box-shadow:0 10px 24px rgba(242,86,154,.35)}
+.btn-verde{background:var(--verde);color:#fff;box-shadow:0 10px 24px rgba(62,142,65,.30)}
+.btn-ghost{background:#fff;color:var(--azul);border:2px solid var(--linea)}
+.pill{display:inline-block;background:var(--rosa-claro);color:var(--rosa);font-weight:600;font-size:.8rem;letter-spacing:.3px;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:50;background:rgba(255,247,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces';font-weight:700;font-size:1.3rem;color:var(--azul)}
+.logo svg{width:38px;height:38px}
+.navlinks{display:flex;gap:24px;align-items:center}
+.navlinks a{font-weight:500;color:var(--azul);font-size:.95rem}.navlinks a:hover{color:var(--rosa)}
+.nav-cta{background:var(--rosa);color:#fff!important;padding:9px 18px;border-radius:999px;font-weight:600}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--azul);cursor:pointer}
+.crumbs{padding:14px 0 0;font-size:.85rem;color:var(--gris)}.crumbs a{color:var(--rosa)}
+.hero{background:linear-gradient(160deg,#fff,var(--verde-claro))}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:40px 0 72px}
+.hero h1{font-size:clamp(2rem,4.4vw,3.1rem)}.hero h1 .accent{color:var(--verde)}
+.hero p.lead{font-size:1.1rem;color:var(--gris);margin:16px 0 24px;max-width:520px}
+.leadform{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:18px;box-shadow:var(--sombra);max-width:520px}
+.leadform .lf-top{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--azul);margin-bottom:12px}
+.leadform .lf-top svg{width:22px;height:22px;flex:none}
+.leadform form{display:flex;flex-direction:column;gap:10px}
+.leadform input{width:100%;padding:13px 15px;border:1.5px solid var(--linea);border-radius:12px;font-family:'Poppins';font-size:.98rem}
+.leadform input:focus{outline:none;border-color:var(--verde)}
+.leadform small{color:var(--gris);font-size:.8rem}
+.lf-ok{display:none;background:var(--verde-claro);border:1px solid #cfe8cd;color:var(--verde-2);border-radius:12px;padding:14px;font-size:.92rem}
+.lf-ok a{color:var(--verde-2);font-weight:700;text-decoration:underline}
+.cover-card{width:230px;margin:0 auto;background:linear-gradient(150deg,var(--verde-2),var(--verde));border-radius:16px;box-shadow:0 22px 50px rgba(22,59,84,.30);color:#fff;padding:26px 20px;text-align:center}
+.cover-card .leaf{font-size:2rem}.cover-card h3{color:#fff;font-size:1.35rem;margin:10px 0}
+.cover-card .price{margin-top:12px;background:rgba(255,255,255,.16);border-radius:999px;display:inline-block;padding:5px 14px;font-weight:600;font-size:.9rem}
+.trust{background:var(--azul);color:#fff;padding:20px 0}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;text-align:center}
+.trust div{flex:1;min-width:150px;font-size:.9rem}.trust b{display:block;font-family:'Fraunces';font-size:1.4rem;color:var(--rosa-2)}
+section.block{padding:64px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 36px}.sec-head h2{font-size:clamp(1.7rem,3.2vw,2.3rem)}.sec-head p{color:var(--gris);margin-top:10px}
+.detail{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center;background:#fff;border:1px solid var(--linea);border-radius:22px;padding:34px;box-shadow:var(--sombra)}
+.detail .coverbox{background:linear-gradient(150deg,var(--verde-2),var(--verde));border-radius:16px;color:#fff;padding:30px 22px;text-align:center}.detail .coverbox .leaf{font-size:2.2rem}.detail .coverbox h3{color:#fff;font-size:1.4rem;margin:10px 0}
+.detail ul{list-style:none;display:grid;gap:10px;margin:16px 0}.detail li{display:flex;gap:10px;font-size:.97rem}.detail li svg{width:20px;height:20px;flex:none;margin-top:3px}
+.pricerow{display:flex;align-items:baseline;gap:12px;margin:6px 0 16px}.pricerow .big{font-family:'Fraunces';font-size:2.2rem;color:var(--azul)}.pricerow .note{color:var(--gris);font-size:.88rem}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.faq{max-width:760px;margin:0 auto}
+details{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:6px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;color:var(--azul);padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:1.4rem;color:var(--rosa)}details[open] summary::after{content:"–"}
+details p{padding:0 0 16px;color:var(--gris);font-size:.95rem}
+footer{background:var(--azul-2);color:#cdd9e2;padding:40px 0 22px;text-align:center}footer a{color:#cdd9e2}footer a:hover{color:var(--rosa-2)}.fbar{font-size:.82rem;color:#9fb0bd;margin-top:10px}
+.wafloat{position:fixed;right:20px;bottom:20px;z-index:60;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.5)}.wafloat svg{width:30px;height:30px}
+@media(max-width:860px){.hero-grid,.detail{grid-template-columns:1fr}.navlinks{display:none}.burger{display:block}.navlinks.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:#fff;padding:18px 22px;gap:16px;border-bottom:1px solid var(--linea)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7EB6"/><stop offset="1" stop-color="#F2569A"/></linearGradient></defs><path d="M12 78 C30 44 60 30 86 38 C78 26 84 16 95 12 C90 24 93 33 100 34 C84 42 70 52 64 70 C73 66 82 70 86 80 C74 74 62 76 54 84 C44 70 26 70 12 78 Z" fill="url(#g1)"/><path d="M58 40 C62 22 76 18 80 30 C72 32 64 36 58 40 Z" fill="url(#g1)"/><circle cx="80" cy="42" r="3.4" fill="#fff"/><circle cx="81" cy="42.6" r="1.7" fill="#163B54"/></svg>
+        Delfín Rosa
+      </a>
+      <div class="navlinks" id="nav">
+        <a href="productos.html">Productos</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a class="nav-cta" href="#guia">Guía gratis</a>
+      </div>
+      <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap"><div class="crumbs"><a href="index.html">Inicio</a> / <a href="productos.html">Productos</a> / Sustratos Hidropónicos</div></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="pill">Ebook · Producto destacado</span>
+        <h1>Empezar con el sustrato equivocado <span class="accent">te sale caro.</span></h1>
+        <p class="lead">La guía para elegir el sustrato correcto, cultivar con éxito y ahorrar dinero. Y llévate <b>gratis</b> la guía de los 5 errores que pudren tus raíces.</p>
+        <div class="leadform" id="guia">
+          <div class="lf-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3E8E41" stroke-width="2"><path d="M3 8l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            Descarga GRATIS: "5 errores que pudren tus raíces"
+          </div>
+          <form id="leadForm">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu mejor correo" required>
+            <button class="btn btn-verde" type="submit" style="justify-content:center">Quiero la guía gratis →</button>
+            <small>Sin costo. Te llega el PDF al instante.</small>
+          </form>
+          <div class="lf-ok" id="leadOk">✅ ¡Listo! Descarga tu guía 👉 <a href="guia-5-errores.pdf" target="_blank">Bajar el PDF</a></div>
+        </div>
+      </div>
+      <div><div class="cover-card"><div class="leaf">🌱</div><h3>Sustratos Hidropónicos</h3><div style="font-size:.82rem;opacity:.85">La clave para cultivos exitosos y rentables</div><div class="price">S/ 25 · Garantía 7 días</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust"><div class="wrap">
+  <div><b>10</b>capítulos prácticos</div>
+  <div><b>15+</b>sustratos explicados</div>
+  <div><b>∞</b>acceso de por vida</div>
+  <div><b>7 días</b>de garantía</div>
+</div></div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head"><span class="pill">El ebook</span><h2>Sustratos Hidropónicos: la clave de cultivos exitosos y rentables</h2></div>
+    <div class="detail">
+      <div class="coverbox"><div class="leaf">🌱</div><h3>Sustratos Hidropónicos</h3><p style="opacity:.9;font-size:.92rem">La clave para cultivos exitosos y rentables</p><div style="margin-top:14px;font-size:.82rem;opacity:.85">PDF · Español · Acceso de por vida</div></div>
+      <div>
+        <h3 style="font-size:1.3rem;margin-bottom:6px">Qué vas a lograr</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3E8E41" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Elegir el sustrato correcto para cada cultivo (matriz de selección).</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3E8E41" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Evitar raíces podridas, compras innecesarias y ensayo y error.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3E8E41" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Entender fibra de coco, perlita, vermiculita y sus mezclas.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3E8E41" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Calcular costos y montar un cultivo rentable.</li>
+        </ul>
+        <div class="pricerow"><span class="big">S/ 25</span><span class="note">pago único · 8 cuotas de S/ 3.13 · garantía 7 días</span></div>
+        <div class="ctas">
+          <a class="btn btn-verde" href="https://go.hotmart.com/A105332641Q?src=web_oferta" target="_blank">Comprar ahora →</a>
+          <a class="btn btn-ghost" href="#guia">Primero la guía gratis</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head"><span class="pill">Preguntas</span><h2>Antes de comprar</h2></div>
+    <div class="faq">
+      <details open><summary>¿Cómo recibo el ebook?</summary><p>Tras la compra en Hotmart, recibes el PDF por correo y tienes acceso de por vida. Pago seguro con débito/crédito.</p></details>
+      <details><summary>¿La guía gratis tiene costo?</summary><p>No. Dejas tu correo y te llega el PDF "5 errores que pudren tus raíces" al instante.</p></details>
+      <details><summary>¿Sirve si recién empiezo?</summary><p>Sí. Está pensado para empezar desde cero y también para quien ya cultiva y quiere mejorar.</p></details>
+      <details><summary>¿Hay garantía?</summary><p>Sí, 7 días de garantía gestionada por Hotmart. Si no es para ti, te devuelven tu dinero.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div style="font-family:Fraunces;font-weight:700;color:#fff;font-size:1.1rem">Grupo Delfín Rosa</div>
+    <div class="fbar">© <span id="yr"></span> Grupo Delfín Rosa · <a href="index.html">Inicio</a> · <a href="productos.html">Productos</a> · <a href="https://wa.me/51901205011" target="_blank">WhatsApp</a></div>
+  </div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/51901205011?text=Hola%2C%20quiero%20info%20del%20ebook%20de%20Sustratos%20Hidrop%C3%B3nicos" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7.7.7-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.9 9.5 10.5 5 16 5s10.1 4.5 10.1 10-4.6 9.8-10.1 9.8zm5.6-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2.9 1.2 2.9.8 3.4.8.5 0 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('leadForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('leadOk').style.display='block';});
+</script>
+</body>
+</html>
