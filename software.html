@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software — Grupo Delfín Rosa</title>
+<meta name="description" content="Software diseñado por Grupo Delfín Rosa para optimizar y escalar tu negocio. STP Sistema: control de ingresos, gastos y recordatorios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rosa:#F2569A;--rosa-2:#FF7EB6;--rosa-claro:#FFE6F1;
+  --azul:#163B54;--azul-2:#0E2A3D;--azul-claro:#E9F1F6;
+  --verde:#3E8E41;--verde-2:#2E5E3A;--verde-claro:#E9F5E8;
+  --crema:#FFF7FB;--tinta:#1E2A33;--gris:#5C6672;--linea:#EFE2EA;
+  --sombra:0 14px 40px rgba(22,59,84,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--tinta);background:var(--crema);line-height:1.6}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;color:var(--azul)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;gap:9px;border:0;border-radius:999px;padding:14px 26px;font-family:'Poppins';font-weight:600;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rosa{background:var(--rosa);color:#fff;box-shadow:0 10px 24px rgba(242,86,154,.35)}
+.btn-ghost{background:#fff;color:var(--azul);border:2px solid var(--linea)}
+.btn-light{background:rgba(255,255,255,.16);color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.pill{display:inline-block;background:var(--rosa-claro);color:var(--rosa);font-weight:600;font-size:.8rem;letter-spacing:.3px;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+.pill-verde{background:var(--verde-claro);color:var(--verde)}
+.pill-gris{background:#f1f1f1;color:#888;font-size:.78rem;padding:5px 12px;border-radius:999px;font-weight:600}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,247,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces';font-weight:700;font-size:1.3rem;color:var(--azul)}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{font-weight:500;color:var(--azul);font-size:.95rem}
+.navlinks a:hover{color:var(--rosa)}
+.navlinks a.active{color:var(--rosa);font-weight:700}
+.nav-cta{background:var(--rosa);color:#fff!important;padding:9px 18px;border-radius:999px;font-weight:600}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--azul);cursor:pointer}
+
+/* HERO SOFTWARE */
+.hero-sw{background:linear-gradient(160deg,var(--azul) 0%,var(--azul-2) 100%);color:#fff;padding:72px 0 80px}
+.hero-sw h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;color:#fff;margin:16px 0 18px}
+.hero-sw p{font-size:1.12rem;color:#d7e2ea;max-width:560px}
+.breadcrumb{font-size:.85rem;color:rgba(255,255,255,.55);margin-bottom:10px}
+.breadcrumb a{color:rgba(255,255,255,.55)}
+.breadcrumb a:hover{color:#fff}
+.breadcrumb span{margin:0 6px}
+
+/* GRID SOFTWARE */
+section.block{padding:70px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.sec-head p{color:var(--gris);margin-top:12px}
+
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
+
+.sw-card{background:#fff;border:1px solid var(--linea);border-radius:24px;padding:32px;box-shadow:var(--sombra);display:flex;flex-direction:column;gap:16px;transition:transform .18s,box-shadow .18s}
+.sw-card:hover{transform:translateY(-6px);box-shadow:0 22px 56px rgba(22,59,84,.16)}
+
+.sw-icon{width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:2rem;background:var(--azul-claro)}
+
+.sw-card h3{font-size:1.35rem;margin-bottom:2px}
+.sw-card .tagline{color:var(--gris);font-size:.93rem}
+
+.sw-features{list-style:none;display:grid;gap:8px;margin:4px 0}
+.sw-features li{display:flex;align-items:flex-start;gap:9px;font-size:.9rem;color:var(--tinta)}
+.sw-features li::before{content:"✓";color:var(--verde);font-weight:700;flex-shrink:0;margin-top:2px}
+
+.sw-footer{margin-top:auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+/* Card próximamente */
+.sw-card.pronto{border-style:dashed;background:rgba(255,255,255,.5);opacity:.7}
+.sw-card.pronto:hover{transform:none;box-shadow:var(--sombra)}
+
+.contacto{background:var(--rosa-claro)}
+.contacto .box{background:#fff;border:1px solid var(--linea);border-radius:24px;padding:40px;text-align:center;box-shadow:var(--sombra)}
+
+footer{background:var(--azul-2);color:#cdd9e2;padding:48px 0 24px}
+footer .logo{color:#fff}
+footer a{color:#cdd9e2}
+footer a:hover{color:var(--rosa-2)}
+.fgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;margin-bottom:24px}
+.fbar{border-top:1px solid rgba(255,255,255,.12);padding-top:16px;font-size:.82rem;color:#9fb0bd;text-align:center}
+
+.wafloat{position:fixed;right:20px;bottom:20px;z-index:60;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.5)}
+.wafloat svg{width:30px;height:30px}
+
+@media(max-width:860px){
+  .navlinks{display:none}
+  .burger{display:block}
+  .navlinks.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:#fff;padding:18px 22px;gap:16px;border-bottom:1px solid var(--linea)}
+  .sw-grid{grid-template-columns:1fr}
+}
+.logo-img{height:46px;width:auto;display:block}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="index.html"><img src="logo-nav.png?v=2" class="logo-img" alt="Delfín Rosa"> Delfín Rosa</a>
+      <div class="navlinks" id="nav">
+        <a href="productos.html">Productos</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a class="nav-cta" href="productos.html">Ver productos</a>
+      </div>
+      <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-sw">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="index.html">Inicio</a><span>›</span> Software</p>
+    <h1>Software para tu negocio</h1>
+    <p>Herramientas propias, diseñadas para optimizar operaciones, controlar ingresos y escalar con orden.</p>
+  </div>
+</section>
+
+<!-- GRID DE SOFTWARE -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill">Nuestras herramientas</span>
+      <h2>Sistemas que ya están funcionando</h2>
+      <p>Cada software nace de una necesidad real de negocio. Simples de usar, potentes por dentro.</p>
+    </div>
+
+    <div class="sw-grid">
+
+      <!-- STP Sistema -->
+      <div class="sw-card">
+        <div class="sw-icon">📊</div>
+        <div>
+          <h3>STP Sistema</h3>
+          <p class="tagline">Control de streaming y suscripciones</p>
+        </div>
+        <ul class="sw-features">
+          <li>Gestión de clientes, contratos y pagos</li>
+          <li>Recordatorios automáticos por WhatsApp</li>
+          <li>Dashboard con ingresos y morosos</li>
+          <li>Control de cuentas maestras y perfiles</li>
+          <li>Registro de bajas y rentabilidad por plataforma</li>
+        </ul>
+        <div class="sw-footer">
+          <a class="btn btn-rosa" href="https://stp.delfinrosa.com" target="_blank">Acceder al sistema →</a>
+          <span class="pill pill-verde">Disponible</span>
+        </div>
+      </div>
+
+      <!-- Próximamente 1 -->
+      <div class="sw-card pronto">
+        <div class="sw-icon" style="background:#f5f5f5">🧾</div>
+        <div>
+          <h3>Facturación Simple</h3>
+          <p class="tagline">Genera y envía comprobantes fácilmente</p>
+        </div>
+        <ul class="sw-features">
+          <li>Cotizaciones y facturas en segundos</li>
+          <li>Envío automático por WhatsApp</li>
+          <li>Historial de clientes y pagos</li>
+        </ul>
+        <div class="sw-footer">
+          <span class="pill-gris">Próximamente</span>
+        </div>
+      </div>
+
+      <!-- Próximamente 2 -->
+      <div class="sw-card pronto">
+        <div class="sw-icon" style="background:#f5f5f5">📦</div>
+        <div>
+          <h3>Inventario Pro</h3>
+          <p class="tagline">Control de stock para negocios físicos</p>
+        </div>
+        <ul class="sw-features">
+          <li>Alertas de stock mínimo</li>
+          <li>Control de entradas y salidas</li>
+          <li>Reportes de movimiento mensual</li>
+        </ul>
+        <div class="sw-footer">
+          <span class="pill-gris">Próximamente</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="block contacto" id="contacto">
+  <div class="wrap">
+    <div class="box">
+      <span class="pill">¿Necesitas algo específico?</span>
+      <h2 style="margin:12px 0">Cuéntanos tu caso</h2>
+      <p style="color:var(--gris);max-width:540px;margin:0 auto 22px">Si tienes un proceso que quieres automatizar o un sistema a medida, escríbenos. Respondemos rápido.</p>
+      <a class="btn btn-rosa" href="https://wa.me/51901205011?text=Hola%2C%20me%20interesa%20el%20software%20de%20Delf%C3%ADn%20Rosa" target="_blank">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo" style="font-family:Fraunces;font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:8px">
+          <img src="logo-delfinrosa.png?v=2" style="height:30px;width:auto" alt="">
+          Delfín Rosa
+        </div>
+        <p style="max-width:300px;margin-top:10px;font-size:.9rem">Productos digitales, servicios y software. Aprende, cultiva y emprende.</p>
+      </div>
+      <div style="display:flex;gap:48px;flex-wrap:wrap">
+        <div><h5 style="color:#fff;margin-bottom:10px">Explora</h5>
+          <ul style="list-style:none;display:grid;gap:7px;font-size:.9rem">
+            <li><a href="productos.html">Productos digitales</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="sustratos.html">Sustratos Hidropónicos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div><h5 style="color:#fff;margin-bottom:10px">Software</h5>
+          <ul style="list-style:none;display:grid;gap:7px;font-size:.9rem">
+            <li><a href="https://stp.delfinrosa.com" target="_blank">STP Sistema</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="fbar">© <span id="yr"></span> Grupo Delfín Rosa · Hecho en Perú · Marketing honesto y medible.</div>
+  </div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/51901205011" target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
